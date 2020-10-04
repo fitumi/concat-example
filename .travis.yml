@@ -11,5 +11,7 @@ addons:
       - cmake
 
 script:
+  - whereis cmake
+  - locate cmake
   - cmake --version
   - ./build.sh
