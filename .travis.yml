@@ -1,6 +1,9 @@
 dist: bionic
 language: cpp
 
+before_install:
+  - sudo apt-get purge cmake
+
 addons:
   apt:
     sources:
