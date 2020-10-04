@@ -1,3 +1,9 @@
 dist: bionic
 language: cpp
+
+before_install:
+  - sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
+  - sudo apt-get -q update
+  - suto apt-get install cmake
+
 script: ./build.sh
