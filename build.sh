@@ -1,4 +1,8 @@
 set -e
 set -x
-cmake -B build
-cmake --build build
+
+mkdir build
+pushd build
+cmake ..
+cmake --build .
+popd
